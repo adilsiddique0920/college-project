@@ -10,14 +10,14 @@
 }
 
 body {
-    background-color: #13c8e8;
+    background-color: white;
     /* overflow: hidden; */
 }
 
 header {
     width: 100%;
     height: 40px;
-    background-color: #52b788;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,23 +28,19 @@ header {
 }
 
 .logo {
-    color: rgb(255, 255, 0);
+    color: aqua;
     font-size: 35px;
     font-weight: bold;
 }
 
 .logo span {
-    text-shadow: 0 0 4px red;
+    text-shadow: 0 0 4px black;
 
 }
-
-.humburger {
-    display: none;
-
-}
-
 .menuBar ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -53,14 +49,96 @@ header {
     text-transform: capitalize;
     transition: 0.8s;
     display: block;
-    color: #000;
+    color: aqua;
 
 
 
 }
 
 .menuBar ul li a:hover {
-    color: #fff;
+    color:black;
     border-bottom: 2px solid #fff;
    
 }
+.main{
+    margin-top:2px;
+    
+}
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-shadow: 0 0 5px black;
+    color: aqua;
+    transition: 0.8;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+
+}
+.head:hover{
+    color: black;
+    text-shadow: 0 0 5px aqua;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#container .item{
+    background-color:aqua;
+    height: 340px;
+    border-radius: 20px;
+} 
+.item img{
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+   
+
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+
+
+}
+.details h4{
+    text-transform: capitalize;
+    margin-left: 5px;
+
+}
+.details button{
+    color: #fff;
+    background: rgba(0, 0, 255, 0.657);
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-right: 5px;
+    transition: 1s;
+    
+}
+.details button:hover{
+    transform: scale(1.111);
+    background: blue;
+}
+/* ---main page---- */
+
+/* add a media query  */
+
+@media(max-width:420px)
