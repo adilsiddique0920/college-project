@@ -67,27 +67,28 @@ header {
    
 }
 .container {
-    width: 80%;
+    width:95%;
     margin: auto;
     overflow: hidden;
     box-shadow: 2px 10px 5px black;
     margin-top: 10px;
     background-color: rgb(141, 231, 231);
-   
-
+    display: flex;
+    justify-content: space-between;
 
 }
 
-
 .main {
-    padding: 40px 0;
+    /* padding: 40px 0; */
 }
 
 .main h1 {
     color:aqua;
     text-shadow: 0 0 5px black;
-    text-align: center;
+    /* text-align: center; */
     transition: 1.8s;
+    margin-left: 10px;
+    text-align: center;
 }
 .main h1:hover{
     color: black;
@@ -95,8 +96,11 @@ header {
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 300px;
+    /* margin: 0 auto; */
+    margin-left: 10px;
+
+    
 }
 
 label {
@@ -110,7 +114,7 @@ textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #696666;
-    border-radius: 4px;
+    border-radius: 20px;
     resize: none;
 }
 
@@ -129,6 +133,13 @@ button:hover {
     background-color:black;
     color:aqua ;
 }
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* add a media query  */
 
 @media(max-width:420px){
@@ -191,5 +202,11 @@ button:hover {
         margin-bottom: 15px;
         font-weight: bold;
         font-size: 16px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
     }
 }
