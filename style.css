@@ -251,7 +251,6 @@ header {
         grid-template-columns: repeat(1, 1fr);
         gap: 7px;
         align-items: center;
-        justify-content: center;
         text-align: center;
         overflow: hidden;
 
