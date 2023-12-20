@@ -5,8 +5,6 @@
     font-family: helvetica;
     text-decoration: none;
     list-style: none;
-
-
 }
 
 body {
@@ -23,8 +21,6 @@ header {
     justify-content: space-between;
     padding: 15px;
     box-shadow: 0 0 8px #000;
-
-
 }
 
 .logo {
@@ -40,14 +36,12 @@ header {
 
 .humburger {
     display: none;
-
 }
 
 .menuBar ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .menuBar ul li a {
@@ -56,15 +50,11 @@ header {
     transition: 0.8s;
     display: block;
     color: aqua;
-
-
-
 }
 
 .menuBar ul li a:hover {
     color:black;
     border-bottom: 2px solid #fff;
-   
 }
 /* ----about---- */
 .aboutus{
@@ -73,8 +63,7 @@ header {
     font-size: 22px;
     padding: 56px;
     height: 200px;
-    width: 100%;
-    
+    width: 100%;  
 }
 .me{
    display: flex;
@@ -85,20 +74,14 @@ header {
    box-shadow: 0 0 8px black;
    margin-top: 10px;
    margin-left: 40px;
-   
-   
-
 }
 .about h1{
     text-align: left;
     font-size: 1.5rem;
-
-   
 }
 .about p{
     text-align: center;
     font-size: 1rem;
-    text
 }
 
 /* add a media query  */
@@ -106,26 +89,21 @@ header {
 @media(max-width:420px){
     header {
         padding: 0 10px;
-
     }
 
     .humburger {
         display: block;
         cursor: pointer;
-
     }
 
     .humburger i {
         color: #000;
         font-size: 20px;
-
-
     }
 
     .menuBar.menuBar.active {
         height: 400px;
         right: 0;
-
     }
 
     .menuBar {
@@ -139,10 +117,6 @@ header {
         height: 0;
         overflow: hidden;
         z-index: 1000;
-        
-
-
-
     }
 
     .menuBar ul {
@@ -152,7 +126,6 @@ header {
         text-align: center;
         transition: 1s;
         opacity: 0;
-
     }
 
     .menuBar.active ul {
@@ -167,8 +140,6 @@ header {
     .aboutus{
         width: 100%;
         height: 200px;
-        
-
     }
     .me{
         display: flex;
@@ -176,7 +147,5 @@ header {
         align-items: center;
         width: 80%;
         height:200px;
-
-        
     }
 }

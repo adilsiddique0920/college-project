@@ -5,8 +5,6 @@
     font-family: helvetica;
     text-decoration: none;
     list-style: none;
-
-
 }
 
 body {
@@ -23,8 +21,6 @@ header {
     justify-content: space-between;
     padding: 15px;
     box-shadow: 0 0 8px #000;
-
-
 }
 
 .logo {
@@ -77,11 +73,6 @@ header {
     justify-content: space-between;
 
 }
-
-.main {
-    /* padding: 40px 0; */
-}
-
 .main h1 {
     color:aqua;
     text-shadow: 0 0 5px black;
@@ -94,13 +85,12 @@ header {
     color: black;
     text-shadow: 0 0 8px aqua;
 }
+/* ----contact page styling--- */
 
 form {
     max-width: 300px;
     /* margin: 0 auto; */
     margin-left: 10px;
-
-    
 }
 
 label {
@@ -137,7 +127,6 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* add a media query  */
@@ -151,14 +140,11 @@ button:hover {
     .humburger {
         display: block;
         cursor: pointer;
-
     }
 
     .humburger i {
         color:aqua;
         font-size: 20px;
-
-
     }
 
     .menuBar.menuBar.active {
@@ -178,10 +164,6 @@ button:hover {
         height: 0;
         overflow: hidden;
         z-index: 1000;
-        
-
-
-
     }
 
     .menuBar ul {
@@ -207,6 +189,5 @@ button:hover {
         display: flex;
         justify-content: center;
         width: 100%;
-
     }
 }

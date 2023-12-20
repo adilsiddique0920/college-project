@@ -5,15 +5,13 @@
     font-family: helvetica;
     text-decoration: none;
     list-style: none;
-
-
 }
 
 body {
     background-color: white;
     /* overflow: hidden; */
 }
-
+/* ---header page styling--- */
 header {
     width: 100%;
     height: 60px;
@@ -23,8 +21,6 @@ header {
     justify-content: space-between;
     padding: 15px;
     box-shadow: 0 0 8px #000;
-
-
 }
 
 .logo {
@@ -35,19 +31,16 @@ header {
 
 .logo span {
     text-shadow: 0 0 4px black;
-
 }
 
 .humburger {
     display: none;
-
 }
 
 .menuBar ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .menuBar ul li a {
@@ -56,16 +49,13 @@ header {
     transition: 0.8s;
     display: block;
     color: aqua;
-
-
-
 }
 
 .menuBar ul li a:hover {
     color:black;
     border-bottom: 2px solid #fff;
-   
 }
+/* ----main page styling--- */
 .main{
    width: 100%;
    height: 400px;
@@ -88,7 +78,6 @@ header {
     font-size: 1.5rem;
     font-weight: 100;
     transition: 1.8s;
-
 }
 .head:hover{
     color: black;
@@ -105,7 +94,6 @@ header {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-
 }
 #container .item{
     background-color:aqua;
@@ -115,24 +103,18 @@ header {
 } 
 #container .item:hover{
     /* border:2px solid black ; */
-    box-shadow: 0 0 8px black;
+    box-shadow: 0 5px 10px black;
 }
 .item img{
     width: 100%;
     height: 300px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-
-   
-
 }
 .details{
     display: flex;
     justify-content: space-between;
     align-items: end;
-
-
-
 }
 .details h4{
     text-transform: capitalize;
@@ -156,25 +138,24 @@ header {
 }
 /* -----footer-----*/
 .footer{
-    display: flex;
-    justify-content: space-between;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
     margin-top: 20px;
     padding: 10px;
     width: 100%;
     height: 400px;
     background-color: black;
     color: aqua;
-    /* bottom: 10px; */
-
-    
-}
-.footer .footer-text{
-    /* margin:  0 10px; */
-    
-
+    /* bottom: 10px; */  
 }
 .footer-text p{
     margin-top: 10px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    transition: 1.8s;
 }
 
 /* add a media query  */
@@ -194,14 +175,11 @@ header {
     .humburger i {
         color:aqua;
         font-size: 20px;
-
-
     }
 
     .menuBar.menuBar.active {
         height: 400px;
         right: 0;
-
     }
 
     .menuBar {
@@ -215,10 +193,6 @@ header {
         height: 0;
         overflow: hidden;
         z-index: 1000;
-        
-
-
-
     }
 
     .menuBar ul {
@@ -228,7 +202,6 @@ header {
         text-align: center;
         transition: 1s;
         opacity: 0;
-
     }
 
     .menuBar.active ul {
@@ -248,19 +221,18 @@ header {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 7px;
         align-items: center;
         text-align: center;
         overflow: hidden;
 
-
     }
     .footer{
       width: 100%;
-      height: 200px;
-    display: flex;
-    justify-content: space-between;
+      height: 400px;
+     display: grid;
+     grid-template-columns: repeat(2 , 1fr);
     /* align-items: center; */
     padding: 5px;
 
